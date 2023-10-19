@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { HomeService } from '../home.service';
+import { Observable } from 'rxjs';
+import { Home2 } from '../home';
 
 @Component({
   selector: 'app-orderslist',
@@ -6,5 +9,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./orderslist.component.css']
 })
 export class OrderslistComponent {
+  home2 : Observable<Home2> |undefined
+  constructor( private HomeService: HomeService){}
 
+  ngOnInit() : void {
+    this.showOrderslist();
+  }
+  showOrderslist(){
+    this.home2= this.HomeService.getOrderslist();
+  }
+  
 }
