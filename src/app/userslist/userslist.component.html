@@ -1,1 +1,24 @@
-<p>userslist works!</p>
+
+	<head>
+		<title>Accordion</title>
+	</head>
+	<body>
+		<div>
+    <details open>
+        <summary>
+            {{ (userslist | async)?.user1 }}
+        </summary>
+        <div>
+            {{ (userslist | async)?.user2 }}
+        </div>
+    </details>
+    <details>
+        <summary>
+            {{ (userslist | async)?.user2 }}
+        </summary>
+        <div>
+            {{ (userslist | async)?.user1 }}        </div>
+    </details>
+
+</div>
+	</body>

@@ -15,10 +15,12 @@ export class UserslistComponent {
 
   ngOnInit(){
     this.showUserslist();
+    console.log("lsit:",this.showUserslist())
   }
 
   showUserslist(){
     this.userslist=this.HomeService.getUserslist()
+    
   }
 
 }

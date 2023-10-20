@@ -1,18 +1,5 @@
 {
-    "books": {
-        "book1": [
-            {"title":"Sentra", "author":"paul"}
-        ],
-        "book2": [
-            {"title":"Taurus", "author":"jean"}
-        ]
-    },
-    "devices": {
-        "device1": [
-            {"name":"Sentra", "color":"red"}
-        ],
-        "device2": [
-            {"name":"Taurus", "color":"blue"}
-        ]
-    }
+    "books": "Books",
+    "devices": "devices"
+        
 }

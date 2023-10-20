@@ -1,12 +1,21 @@
 <nav>
   <ul>
-    <li>
-      <a routerLink="/productslist" routerLinkActive="active">Products list</a>
+    <li class="deroulant">
+      <a routerLink="/productslist" routerLinkActive="active" >Products list</a>
+      <ul class="sous" >
+        <p><a routerLink="/books" routerLinkActive="active">{{ jsonData.books }}</a></p>
+        <p><a routerLink="/devices" routerLinkActive="active">{{ jsonData.devices }}</a></p>
+      </ul>
+    </li>
+    <li class="deroulant">
       <a routerLink="/orderslist" routerLinkActive="active">orders list</a>
+    </li>
+    <li class="deroulant">
       <a routerLink="/userslist" routerLinkActive="active">users list</a>
+    </li>
+    <li>
       <a routerLink="/contactform" routerLinkActive="active">contact form</a>
     </li>
   </ul>
 </nav>
-<!-- The routed views render in the <router-outlet>-->
   <router-outlet></router-outlet>

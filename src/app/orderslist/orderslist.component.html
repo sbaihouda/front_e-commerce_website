@@ -1,2 +1,20 @@
-<p>{{ (home2 | async)?.order1 }}</p>
-<p>{{ (home2 | async)?.order2 }}</p>
+<body>
+    <div>
+<details open>
+    <summary>
+        {{ (home2 | async)?.order1 }}
+    </summary>
+    <div>
+        {{ (home2 | async)?.order2 }}
+    </div>
+</details>
+<details>
+    <summary>
+        {{ (home2 | async)?.order2 }}
+    </summary>
+    <div>
+        {{ (home2 | async)?.order1 }}       </div>
+</details>
+
+</div>
+</body>

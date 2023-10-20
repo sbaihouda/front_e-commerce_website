@@ -1,15 +1,9 @@
 export interface Home {
     
-    books: {
-        [key : string]: [
-            {title:string , author:string}
-        ]
-    },
-    devices: {
-        [key : string]: [
-            {name:string, color:string}
-        ]
-    }
+    books: String,
+    devices: String
+        
+        
 }
 
 export interface orderslist {
@@ -20,4 +14,17 @@ export interface orderslist {
 export interface userslist {
     user1 : String,
     user2 : String
+}
+
+export interface books {
+    book1: 
+    {title:string , author:string},
+    book2: 
+    {title:string , author:string}
+}
+export interface devices {
+    device1: 
+    {name:string , color:string},
+    device2: 
+    {name:string , color:string}
 }
