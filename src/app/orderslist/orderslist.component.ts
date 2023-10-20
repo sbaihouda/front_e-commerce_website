@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { HomeService } from '../home.service';
 import { Observable } from 'rxjs';
-import { Home2 } from '../home';
+import { orderslist } from '../home';
 
 @Component({
   selector: 'app-orderslist',
@@ -9,7 +9,7 @@ import { Home2 } from '../home';
   styleUrls: ['./orderslist.component.css']
 })
 export class OrderslistComponent {
-  home2 : Observable<Home2> |undefined
+  home2 : Observable<orderslist> |undefined
   constructor( private HomeService: HomeService){}
 
   ngOnInit() : void {

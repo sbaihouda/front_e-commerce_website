@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Home, Home2 } from './home';
+import { Home, orderslist, userslist } from './home';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -9,14 +9,18 @@ import { Observable } from 'rxjs';
 export class HomeService {
 
   apiUrl = 'assets/productslist.json';
-  apiUrl2= 'assets/ordersList.json'
+  apiUrl2= 'assets/ordersList.json';
+  usersapiUrl = 'assets/userslist.json'
 
   constructor(private http: HttpClient) { }
 
   getProductslist() :Observable<Home> {
     return this.http.get<Home>(this.apiUrl);
   }
-  getOrderslist():Observable<Home2> {
-    return this.http.get<Home2>(this.apiUrl2)
+  getOrderslist():Observable<orderslist> {
+    return this.http.get<orderslist>(this.apiUrl2)
+  }
+  getUserslist():Observable<userslist> {
+    return this.http.get<userslist>(this.usersapiUrl)
   }
 }

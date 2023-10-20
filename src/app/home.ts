@@ -12,7 +12,12 @@ export interface Home {
     }
 }
 
-export interface Home2 {
+export interface orderslist {
     order1 : String,
     order2 : String
+}
+
+export interface userslist {
+    user1 : String,
+    user2 : String
 }
