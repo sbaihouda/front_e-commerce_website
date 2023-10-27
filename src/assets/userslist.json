@@ -1,4 +1,24 @@
-{
-    "user1" : "Bob",
-    "user2" : "houda"
-}
+[
+    {
+        "id": 1,
+        "name": "user1",
+        "email": "use1@gmail.com",
+        "phoneNumber": "0625252625",
+        "commandsCout": "10"
+    },
+    {
+        "id": 2,
+        "name": "user2",
+        "email": "use2@gmail.com",
+        "phoneNumber": "0625333325",
+        "commandsCout": "12"
+    },
+    {
+        "id": 3,
+        "name": "user3",
+        "email": "use1@gmail.com",
+        "phoneNumber": "062500025",
+        "commandsCout": "10"
+    }
+  ]
+  

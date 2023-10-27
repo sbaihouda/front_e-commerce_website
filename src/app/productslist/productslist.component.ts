@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Home } from '../home';
+import { productslist } from '../home';
 import { HomeService } from '../home.service';
 
 
@@ -10,7 +10,7 @@ import { HomeService } from '../home.service';
   styleUrls: ['./productslist.component.css']
 })
 export class ProductslistComponent {
-  home: Observable<Home> | undefined;
+  productslist: Observable<productslist> | undefined;
   jsonData:any
   books:any;
   devices: any;
@@ -33,6 +33,6 @@ export class ProductslistComponent {
 
 
   showProductslist() {
-    this.home = this.HomeService.getProductslist();
+    this.productslist = this.HomeService.getProductslist();
   }
 }

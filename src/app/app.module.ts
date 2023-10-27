@@ -12,6 +12,7 @@ import { ContactformComponent } from './contactform/contactform.component';
 import { ProductComponent } from './product/product.component';
 import { BooksComponent } from './books/books.component';
 import { DevicesComponent } from './devices/devices.component';
+import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { DevicesComponent } from './devices/devices.component';
     ContactformComponent,
     ProductComponent,
     BooksComponent,
-    DevicesComponent
+    DevicesComponent,
+    WelcomePageComponent
   ],
   imports: [
     BrowserModule,

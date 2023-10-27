@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HomeService } from './home.service';
-import { orderslist, userslist, Home} from './home';
+import { orderslist, userslist, productslist} from './home';
 
 
 @Component({
@@ -13,7 +13,7 @@ export class AppComponent {
   title = 'projet';
   userslist: Observable<userslist> | undefined;
   home2 : Observable<orderslist> |undefined
-  home : Observable<Home> | undefined;
+  productsList : Observable<productslist> | undefined;
   jsonData:any
 
 
@@ -37,6 +37,6 @@ export class AppComponent {
     this.home2= this.HomeService.getOrderslist();
   }
   showProductslist() {
-    this.home = this.HomeService.getProductslist();
+    this.productsList = this.HomeService.getProductslist();
   }
 }

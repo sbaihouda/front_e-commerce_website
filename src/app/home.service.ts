@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Home, books, devices, orderslist, userslist } from './home';
+import { productslist, books, devices, orderslist, userslist } from './home';
 import { Observable, map } from 'rxjs';
 import { ProductslistComponent } from './productslist/productslist.component';
 
@@ -19,8 +19,8 @@ export class HomeService {
 
   constructor(private http: HttpClient) { }
 
-  getProductslist() :Observable<Home> {
-    return this.http.get<Home>(this.apiUrl);
+  getProductslist() :Observable<productslist> {
+    return this.http.get<productslist>(this.apiUrl);
   }
   getOrderslist():Observable<orderslist> {
     return this.http.get<orderslist>(this.apiUrl2)

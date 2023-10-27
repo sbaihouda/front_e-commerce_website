@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Home, userslist } from '../home';
+import { productslist, userslist } from '../home';
 import { Observable } from 'rxjs';
 import { HomeService } from '../home.service';
 
@@ -11,7 +11,12 @@ import { HomeService } from '../home.service';
 export class UserslistComponent {
 
   userslist: Observable<userslist> | undefined;
-  constructor(private HomeService : HomeService){}
+  usersData:any
+  constructor(private HomeService : HomeService){
+    this.HomeService.getUserslist().subscribe((data: any) => {
+      this.usersData = data; // Stockez les données dans la variable jsonData
+    });
+  }
 
   ngOnInit(){
     this.showUserslist();
@@ -22,5 +27,6 @@ export class UserslistComponent {
     this.userslist=this.HomeService.getUserslist()
     
   }
+  
 
 }

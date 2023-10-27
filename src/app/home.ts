@@ -1,10 +1,10 @@
-export interface Home {
-    
-    books: String,
-    devices: String
-        
-        
-}
+export interface productslist {
+    id: number;
+    name: string;
+    description: string;
+    price: number;
+    category: string;
+  }
 
 export interface orderslist {
     order1 : String,
@@ -12,8 +12,11 @@ export interface orderslist {
 }
 
 export interface userslist {
-    user1 : String,
-    user2 : String
+        id: number,
+        name: string,
+        email: string,
+        phoneNumber: string,
+        commandsCount: string
 }
 
 export interface books {
