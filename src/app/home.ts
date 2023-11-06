@@ -2,13 +2,16 @@ export interface productslist {
     id: number;
     name: string;
     description: string;
-    price: number;
-    category: string;
+    state: number;
+    orderdate: string;
   }
 
 export interface orderslist {
-    order1 : String,
-    order2 : String
+    id: number;
+    name: string;
+    description: string;
+    price: number;
+    category: string;
 }
 
 export interface userslist {

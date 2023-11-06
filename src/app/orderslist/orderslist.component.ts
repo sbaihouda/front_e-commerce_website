@@ -9,14 +9,25 @@ import { orderslist } from '../home';
   styleUrls: ['./orderslist.component.css']
 })
 export class OrderslistComponent {
-  home2 : Observable<orderslist> |undefined
+  orderslist : Observable<orderslist> |undefined
+  ordersData:any
   constructor( private HomeService: HomeService){}
 
   ngOnInit() : void {
     this.showOrderslist();
+    this.HomeService.getOrderslist().subscribe((data: any) => {
+      this.ordersData = data; // Stockez les données dans la variable jsonData
+    });
   }
   showOrderslist(){
-    this.home2= this.HomeService.getOrderslist();
+    this.orderslist= this.HomeService.getOrderslist();
   }
+
+  function(){
+    alert("lol");
+    };
+  
+
+  
   
 }

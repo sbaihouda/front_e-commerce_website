@@ -1,20 +1,78 @@
-<body>
-    <div>
-<details open>
-    <summary>
-        {{ (home2 | async)?.order1 }}
-    </summary>
-    <div>
-        {{ (home2 | async)?.order2 }}
-    </div>
-</details>
-<details>
-    <summary>
-        {{ (home2 | async)?.order2 }}
-    </summary>
-    <div>
-        {{ (home2 | async)?.order1 }}       </div>
-</details>
 
-</div>
-</body>
+<div >
+    <h2>Activate Modal with JavaScript</h2>
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-info btn-lg" id="myBtn" (click)=function()>Open Modal</button>
+  
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Modal Header</h4>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the modal.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+
+  <!doctype html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+      <title>products page</title>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body class="p-3 m-0 border-0 ">
+     
+      <div class="container mt-5 mb-5">
+        <div class="d-flex justify-content-center row">
+          <div class="col-md-10">
+            
+              <div class="container mt-3">
+                  <h2>Liste des utilisateurs </h2>
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>Order Id</th>
+                        <th>name</th>
+                        <th>order date</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    
+                    <tbody>
+                    
+                        <tr *ngFor="let order of ordersData" >
+                            <td>{{order.id}}</td>
+                            <td>{{order.name}}</td>
+                            <td>{{order.orderdate}}</td>
+                            <td><button type="button" class="btn btn-info btn-lg" id="myBtn" (click)=function()>Details</button></td>
+                            
+                          </tr>
+    
+                        
+                      </tbody>
+                  </table>
+                </div>
+                
+  
+  </div>
+  </div>
+  </div>
+  </body>
+  
