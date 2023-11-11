@@ -1,14 +1,12 @@
 <nav>
+
   <ul>
     <li class="deroulant">
       <a routerLink="/welcome-page" routerLinkActive="active" >Home</a>
-    </li>
+      </li>
+    
     <li class="deroulant">
       <a routerLink="/productslist" routerLinkActive="active" >Products list</a>
-      <!-- <ul class="sous" >
-        <p><a routerLink="/books" routerLinkActive="active">{{ jsonData.books }}</a></p>
-        <p><a routerLink="/devices" routerLinkActive="active">{{ jsonData.devices }}</a></p>
-      </ul> -->
     </li>
     <li class="deroulant">
       <a routerLink="/orderslist" routerLinkActive="active">orders list</a>
@@ -21,4 +19,6 @@
     </li>
   </ul>
 </nav>
+
   <router-outlet></router-outlet>
+  

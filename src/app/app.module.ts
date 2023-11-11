@@ -9,9 +9,6 @@ import { ProductslistComponent } from './productslist/productslist.component';
 import { UserslistComponent } from './userslist/userslist.component';
 import { OrderslistComponent } from './orderslist/orderslist.component';
 import { ContactformComponent } from './contactform/contactform.component';
-import { ProductComponent } from './product/product.component';
-import { BooksComponent } from './books/books.component';
-import { DevicesComponent } from './devices/devices.component';
 import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 
 @NgModule({
@@ -21,9 +18,6 @@ import { WelcomePageComponent } from './welcome-page/welcome-page.component';
     UserslistComponent,
     OrderslistComponent,
     ContactformComponent,
-    ProductComponent,
-    BooksComponent,
-    DevicesComponent,
     WelcomePageComponent
   ],
   imports: [

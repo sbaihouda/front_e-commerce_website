@@ -4,12 +4,14 @@ export interface productslist {
     description: string;
     state: number;
     orderdate: string;
+    image: string;
   }
 
 export interface orderslist {
     id: number;
     name: string;
     description: string;
+    mail: string;
     price: number;
     category: string;
 }
@@ -19,7 +21,9 @@ export interface userslist {
         name: string,
         email: string,
         phoneNumber: string,
-        commandsCount: string
+        commandsCount: string,
+        address: string,
+        points: number
 }
 
 export interface books {

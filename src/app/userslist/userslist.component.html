@@ -13,7 +13,7 @@
       <div class="d-flex justify-content-center row">
         <div class="col-md-10">
             <div class="container mt-3">
-                <h2>Liste des utilisateurs </h2>
+                <h2>Users </h2>
                 <table class="table table-striped">
                   <thead>
                     <tr>
@@ -27,17 +27,21 @@
                   <tbody>
                     
                     <tr *ngFor="let user of usersData" >
-                        <td><details close > <summary>{{user.name}}</summary>
-                          <div > 
-                            <p  class="text-muted" >
-                              {{user.email}}
-                            </p>
+                        <td>
+                          <details close > 
+                            <summary class="text-success">
+                             {{user.name}}
+                            </summary>
+                          <div>
+                              <h5>user address : {{user.address}}</h5>
+                              <h5>Points : {{user.points}}</h5>
+                          
                           </div>
                         </details>
                       </td>
                         <td>{{user.email}}</td>
                         <td>{{user.phoneNumber}}</td>
-                        <td>{{user.commandsCout}}</td>
+                        <td>{{user.commandsCount}}</td>
                       </tr>
 
                     

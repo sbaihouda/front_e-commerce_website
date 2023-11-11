@@ -4,21 +4,27 @@
         "name": "user1",
         "email": "use1@gmail.com",
         "phoneNumber": "0625252625",
-        "commandsCout": "10"
+        "commandsCount": "10",
+        "address": "3 jean moulin, Paris",
+        "points" : 21
     },
     {
         "id": 2,
         "name": "user2",
         "email": "use2@gmail.com",
         "phoneNumber": "0625333325",
-        "commandsCout": "12"
+        "commandsCount": "12",
+        "address": "linguini street, Lyon",
+        "points" : 15
     },
     {
         "id": 3,
         "name": "user3",
         "email": "use1@gmail.com",
         "phoneNumber": "062500025",
-        "commandsCout": "10"
+        "commandsCount": "30",
+        "address": "123 walter street, new york",
+        "points" : 12
     }
   ]
   

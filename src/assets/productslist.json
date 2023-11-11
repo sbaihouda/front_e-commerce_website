@@ -1,24 +1,27 @@
 [
     {
       "id": 1,
-      "name": "Product A",
-      "description": "Description of Product A.",
+      "name": "JBL",
+      "description": "Black JBL mini, ideal for music parties,..",
       "price": 19.99,
-      "category": "Electronics"
+      "category": "Electronics",
+      "image" : "../assets/JBL.jpg"
     },
     {
       "id": 2,
-      "name": "Product B",
-      "description": "Description of Product B.",
+      "name": "toy burger, for kids and adults, cute",
+      "description": "description of burger toy",
       "price": 29.99,
-      "category": "Clothing"
+      "category": "Toys",
+      "image" : "../assets/burger.jpg"
     },
     {
       "id": 3,
-      "name": "Product C",
-      "description": "Description of Product C.",
+      "name": "Fake Ray-Ban sunglasses",
+      "description": "Black sunglasses, Ray-Ban style, made in China",
       "price": 9.99,
-      "category": "Home & Kitchen"
+      "category": "accessories",
+      "image" : "../assets/lunettes.jpg"
     }
   ]
   

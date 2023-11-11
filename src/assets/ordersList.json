@@ -1,22 +1,25 @@
 [
     {
-      "id": 1,
-      "name": "order 1",
-      "description": "address and customer mail 1",
+      "id": 1005,
+      "name": "order 558",
+      "description": "33 flobert street",
+      "mail" : "mrWhite@gmail.com",
       "state": "on the way",
       "orderdate": "05-04-2022"
     },
     {
-      "id": 2,
-      "name": "order 2",
-      "description": "address and customer mail 2",
+      "id": 1006,
+      "name": "order 777",
+      "description": "3 jean jaures",
+      "mail" : "Saulgoodman@gmail.com",
       "state": "delivered",
       "orderdate": "10-12-2021"
     },
     {
-      "id": 3,
-      "name": "order 3",
-      "description": "address and customer mail 3",
+      "id": 1007,
+      "name": "order 88",
+      "description": "15 wallstreet",
+      "mail" : "jessiePinkman@gmail.com",
       "state": "on the way",
       "orderdate": "15-10-2022"
     }
